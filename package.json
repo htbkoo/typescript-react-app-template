@@ -1,7 +1,8 @@
 {
-  "name": "latest-package",
-  "version": "0.1.0",
+  "name": "typescript-react-app-template",
+  "version": "0.2.0",
   "private": true,
+  "homepage": "<REPLACE_ME>",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -16,10 +17,14 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env BROWSER=none react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "cross-env CI=true react-scripts test",
+    "test:watch": "react-scripts test",
+    "eject": "react-scripts eject",
+    "gh-pages:clean": "npx rimraf docs",
+    "gh-pages:rename": "npx move-cli build docs",
+    "gh-pages:rebuild": "npm run gh-pages:clean && npm run build && npm run gh-pages:rename"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "move-cli": "^1.2.1",
+    "rimraf": "^2.6.3"
   }
 }
