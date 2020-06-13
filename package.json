@@ -27,7 +27,10 @@
     "gh-pages:rebuild": "npm run gh-pages:clean && npm run build && npm run gh-pages:rename"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "plugins": [
+      "only-warn"
+    ]
   },
   "browserslist": {
     "production": [
@@ -43,6 +46,7 @@
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
+    "eslint-plugin-only-warn": "^1.0.2",
     "move-cli": "^1.2.1",
     "rimraf": "^2.6.3"
   }
