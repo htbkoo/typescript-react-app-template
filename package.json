@@ -1,6 +1,6 @@
 {
   "name": "typescript-react-app-template",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "homepage": "<REPLACE_ME>",
   "dependencies": {
@@ -13,7 +13,7 @@
     "@types/react-dom": "^16.9.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "4.0.1",
     "typescript": "^3.7.5"
   },
   "scripts": {
