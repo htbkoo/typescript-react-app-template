@@ -1,20 +1,21 @@
 {
   "name": "typescript-react-app-template",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "homepage": "<REPLACE_ME>",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/jest": "^24.9.1",
-    "@types/node": "^12.12.42",
-    "@types/react": "^16.9.35",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
-    "typescript": "^3.7.5"
+    "typescript": "^4.0.3",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "cross-env BROWSER=none react-scripts start",
@@ -27,7 +28,10 @@
     "gh-pages:rebuild": "npm run gh-pages:clean && npm run build && npm run gh-pages:rename"
   },
   "eslintConfig": {
-    "extends": "react-app",
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
     "plugins": [
       "only-warn"
     ]
