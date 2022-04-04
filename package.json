@@ -51,7 +51,7 @@
     "cross-env": "^6.0.3",
     "eslint-plugin-only-warn": "^1.0.2",
     "move-cli": "^1.2.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.x",
     "rimraf": "^2.6.3"
   }
 }
